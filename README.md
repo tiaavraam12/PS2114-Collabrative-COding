@@ -10,13 +10,17 @@ Your task today, as a group, is to use Github to try to understand what the file
 Once you've gotten to grips with the code, you might start to notice that it doesn't seem to reflect what you might expect from human behaviour. There are some changes that may benefit this, which you should implement onto a branched version of the phonoloop.py file:
 
 Add to line 5:
+  
   import numpy.random as rnd 
 
 Replace line 15 with (and insert before the current line 16):
+  
   decRate = 0.8     # Mean decay rate (per second)
+  
   decSD = 0.1       # Standard deviation of decay
   
 And finally add this inbetween lines 27 and 28:
+  
   dRate = decRate+rnd.randint(0,3)*decSD
   
 Try downloading and running the code once you've made these changes; how does it impact the output?
